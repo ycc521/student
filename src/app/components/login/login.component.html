@@ -1,0 +1,26 @@
+<div class="login-bg">
+  <div class="login">
+    <h3 class="text-center text-primary m-t-md">学生成绩在线管理系统</h3>
+    <form method="post" class="layui-form m-t-md"  style="margin-top:35px;">
+      <div class="m-t-md">
+        <input  name ="username" type="text" placeholder="请输入登录账号" [(ngModel)]="username"  class="form-control userInfo">
+      </div>
+      <div class="m-t-md">
+        <input  name ="password" type="text" placeholder="请输入密码" [(ngModel)]="password"  class="form-control psdInfo">
+      </div>
+      <div class="m-t-md">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-6 text-left">
+              <label for=""><input value="1" type="radio" name="admin" [(ngModel)]="admin">教师</label>
+            </div>
+            <div class="col-6 text-right">
+              <label for=""><input value="0" type="radio" name="admin" [(ngModel)]="admin">学生</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button (click)="dologin()" class="btn  m-t-lg btn-login">登录</button>
+    </form>
+  </div>
+</div>

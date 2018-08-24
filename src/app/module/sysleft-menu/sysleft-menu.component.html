@@ -1,0 +1,40 @@
+<div class="wlleftmenu" id="sysleft" [ngStyle]="leftStyle">
+  <ul>
+    <li class="menuitem" >
+      <p>警情来源</p>
+      <div class="newsubmenu">
+        <ul >
+          <li  [ngClass]="{'onmenu':choosedMenu=='stjbMsgQuery'}"  ><a href="javascript:;" (click)="go('mainframe/gambling/receive-report')">省厅接报</a>
+          </li>
+          <li  [ngClass]="{'onmenu':choosedMenu=='jqMsgQuery'}" ><a href="javascript:;" (click)="go('mainframe/gambling/alarm')">110警情</a>
+          </li>
+          <li  [ngClass]="{'onmenu':choosedMenu=='jcjMsgQuery'}" ><a href="javascript:;" (click)="go('mainframe/gambling/receive-police')">接处警</a>
+          </li>
+          <li  [ngClass]="{'onmenu':choosedMenu=='aflrMsgQuery'}" ><a href="javascript:;" (click)="go('mainframe/gambling/unannouncedvisits')">暗访录入</a>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <li class="menuitem" >
+      <p>案件信息</p>
+      <div class="newsubmenu">
+        <ul >
+          <li  [ngClass]="{'onmenu':choosedMenu=='ajcxMsgQuery'}"  ><a href="javascript:;" (click)="go('mainframe/gambling/caseinquiry')">案件查询</a>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <li class="menuitem" >
+      <p>研判预警</p>
+      <div class="newsubmenu">
+        <ul >
+          <li  [ngClass]="{'onmenu':choosedMenu=='ypyjMsgQuery'}"  ><a href="javascript:;">研判预警</a>
+          </li>
+          <li  [ngClass]="{'onmenu':choosedMenu=='khtxMsgQuery'}"  ><a href="javascript:;" (click)="go('mainframe/gambling/write')">考核填写</a>
+          </li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+</div>
+

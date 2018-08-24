@@ -1,0 +1,41 @@
+.login-bg {
+  height: 100%;
+  background: url(../../../assets/images/loginBg.jpg) no-repeat center;
+  background-size: cover;
+  overflow: hidden;
+}
+.block-full{
+  width: 100%;
+}
+.login {
+  margin: 260px 210px 0 auto;
+  min-height: 380px;
+  max-width: 380px;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  /* overflow-x: hidden; */
+  box-sizing: border-box;
+}
+
+.login .message {
+  margin: 10px 0 0 auto;
+  padding: 18px 10px 18px 60px;
+  position: relative;
+  color: #fff;
+  font-size: 18px;
+
+}
+.login #darkbannerwrap {
+  width: 18px;
+  height: 10px;
+  margin: 0 0 20px -58px;
+  position: relative;
+}
+
+.btn-login{
+  width: 100%;
+  background-color: #6296ea;
+  color: white;
+  font-size: 18px;
+}
